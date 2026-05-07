@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV / Resume — Cris Lawrence C. Quinto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: white;
+        overflow-x: hidden;
+      }
+
+      nav {
+        background: #28282b;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 0 clamp(1rem, 4vw, 3rem);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+
+      .back-btn {
+        background: #050203;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: clamp(0.85rem, 1.5vw, 1rem);
+        padding: 0.55em 1.8em;
+        border-radius: 40px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .back-btn:hover {
+        background: #ff0000;
+      }
+
+      main {
+        background: white;
+        padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 5vw, 5rem);
+      }
+
+      .resume-img {
+        width: 100%;
+        max-width: 1100px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+        background: #eee;
+        aspect-ratio: 1744/2466;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="portfolio.html" class="back-btn">← BACK</a>
+    </nav>
+
+    <main>
+      <img
+        class="resume-img"
+        src="images/resumeimg.jpg"
+        alt="CV / Resume of Cris Lawrence C. Quinto"
+      />
+    </main>
+  </body>
+</html>
