@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Cris Lawrence C. Quinto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: white;
+        overflow-x: hidden;
+      }
+
+      nav {
+        background: #28282b;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 clamp(1rem, 4vw, 3rem);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+
+      .back-btn {
+        background: #050203;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: clamp(0.85rem, 1.5vw, 1rem);
+        padding: 0.55em 1.8em;
+        border-radius: 40px;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .back-btn:hover {
+        background: #ff0000;
+      }
+
+      .nav-title {
+        font-size: clamp(1.8rem, 5vw, 4rem);
+        font-weight: 700;
+        line-height: 1;
+      }
+      .nav-title .r {
+        color: #ff0000;
+      }
+
+      main {
+        background: white;
+        padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 5vw, 5rem);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(1.5rem, 4vw, 3rem);
+      }
+
+      .project-img {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+        background: #eee;
+        object-fit: cover;
+        aspect-ratio: 1700/800;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="back-btn">← BACK</a>
+      <div class="nav-title"><span class="r">P</span>ROJECTS</div>
+      <div style="width: 100px"></div>
+    </nav>
+
+    <main>
+      <img class="project-img" src="images/projectimg3.jpg" alt="Project 1" />
+      <img class="project-img" src="images/projectimg2.jpg" alt="Project 2" />
+      <img class="project-img" src="images/projectimg1.jpg" alt="Project 3" />
+    </main>
+  </body>
+</html>
